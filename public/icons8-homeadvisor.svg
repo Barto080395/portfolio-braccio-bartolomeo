@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 64" width="48px" height="64px">
+  <!-- Icona originale -->
+  <path fill="#455a64" d="M30.899,23L18.548,10.668L9,20.201v10.189c0,1.408,1.155,2.564,2.564,2.564l11.317,0.015l9.081,9.968L32,33l4.374-0.031c1.408,0,2.564-1.155,2.564-2.564V23H30.899z"/>
+  <polygon fill="#fb8c00" points="31.619,6 16.381,6 1,21 5.369,21 18.548,7.842 31.727,21 47,21"/>
+
+  <!-- Testo “Bart” -->
+  <text 
+    x="30" 
+    y="50" 
+    text-anchor="middle" 
+    font-size="10" 
+    font-family="Dancing Script, cursive" 
+    fill="#FFD166" 
+    font-weight="600"
+    letter-spacing="0.3"
+  >
+    Bart
+  </text>
+
+  <!-- Testo “Web Developer” corretto -->
+  <text 
+    x="30" 
+    y="58" 
+    text-anchor="middle" 
+    font-size="8" 
+    font-family="Dancing Script, cursive" 
+    fill="#FFD166" 
+    font-weight="500"
+    letter-spacing="0.2"
+  >
+    Developer
+  </text>
+</svg>
