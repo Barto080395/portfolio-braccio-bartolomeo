@@ -104,7 +104,7 @@ const ModalProvider = ({ children }: { children: ReactNode }) => {
 
   const handleConfirm = () => {
     if (state.modal?.editSkill) {
-      // 🔹 In modalità modifica skill, passiamo JSON con name e percent
+      // 🔹 In modalità modifica skill, passiamo JSON con name e percentuale
       const data = JSON.stringify({
         name: skillName,
         percent: skillPercent,
