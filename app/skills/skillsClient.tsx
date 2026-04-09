@@ -72,6 +72,7 @@ const SmallInput = styled("input")({
   height: "50px",
   padding: "0 20px",
   borderRadius: "12px",
+  border: "none",
   "&:focus": {
     boxShadow: "0 0 0 2px rgba(255,215,0,0.6)",
   },

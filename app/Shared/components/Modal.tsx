@@ -109,7 +109,7 @@ const ModalProvider = ({ children }: { children: ReactNode }) => {
         name: skillName,
         percent: skillPercent,
       });
-      
+
       state.modal?.onConfirm(data);
     } else {
       // 🔹 Altrimenti, uso classico inputValue
@@ -133,7 +133,14 @@ const ModalProvider = ({ children }: { children: ReactNode }) => {
       {children}
       {state.modal && (
         <Overlay>
-          <ModalBox>
+          <ModalBox
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                handleConfirm();
+              }
+            }}
+          >
             {state.modal.title && <Title>{state.modal.title}</Title>}
             <Message>
               {state.modal.message}

@@ -24,7 +24,9 @@ const Nav = styled("nav")({
   WebkitBackdropFilter: "blur(8px)",
 });
 
-const LogoLink = styled(Link)({
+const LogoLink = styled(Link, {
+  shouldForwardProp: (prop) => prop !== "isHovered",
+})<NavLinkProps>(({ isHovered }) => ({
   color: "#FFD166",
   fontSize: "1rem",
   fontWeight: 700,
@@ -32,7 +34,9 @@ const LogoLink = styled(Link)({
   letterSpacing: "1px",
   display: "flex",
   justifyContent: "space-between",
-});
+  transition: "transform 0.3s ease, color 0.3s ease",
+  transform: isHovered ? "scale(1.1)" : "scale(1)",
+}));
 
 const LinksWrapper = styled("div")({
   display: "flex",
@@ -64,7 +68,7 @@ const MobileMenu = styled("div")({
   right: "0px",
   background: "rgba(29,43,54,0.95)",
   padding: "12px",
-  borderRadius: "12px 0 0 12px", 
+  borderRadius: "12px 0 0 12px",
   display: "flex",
   flexDirection: "column",
   gap: "8px",
@@ -94,7 +98,7 @@ interface NavbarProps {
 
 interface NavLinkProps {
   isHovered: boolean;
-  cursor: string;
+  cursor?: string;
 }
 
 const NavbarClient: React.FC<NavbarProps> = ({ token }) => {
@@ -127,7 +131,17 @@ const NavbarClient: React.FC<NavbarProps> = ({ token }) => {
 
   return (
     <Nav>
-      <LogoLink href="/secret" aria-label="Homepage">
+      <LogoLink
+        href="/secret"
+        aria-label="Homepage"
+        isHovered={state.hoveredId === "logo"} 
+        onMouseEnter={() => {
+          dispatch({ type: "SET_HOVER", payload: "logo" }); 
+        }}
+        onMouseLeave={() => {
+          dispatch({ type: "CLEAR_HOVER" }); 
+        }}
+      >
         <Image
           src="/icons8-homeadvisor.svg"
           alt="Logo"

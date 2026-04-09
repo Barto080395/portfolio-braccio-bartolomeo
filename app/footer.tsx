@@ -45,9 +45,10 @@ const FooterLink = styled(Link)({
   fontSize: "0.9rem",
   textDecoration: "none",
   marginBottom: "6px",
-  transition: "color 0.3s ease",
+  transition: "transform 0.3s ease, color 0.3s ease",
   "&:hover": {
     color: "#ffffff",
+    transform: "scale(1.1)",
   },
 });
 

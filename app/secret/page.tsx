@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { styled } from "@mui/material/styles";
 import { motion } from "framer-motion";
 import { useGlobalStore } from "../State/GlobalContext";
@@ -26,8 +26,6 @@ const HeroSection = styled("section")(({ theme }) => ({
     minHeight: "700px", // fissa altezza in pixel
   },
 }));
-
-
 
 const Box = styled(motion.div)({
   padding: "20px",
