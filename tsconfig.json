@@ -19,9 +19,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "scripts/seedSkills.ts", "models/modelsSkill.js", "lib/mongodb.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "scripts/seedSkills.ts", "src/models/modelsSkill.js", "src/lib/mongodb.js"],
   "exclude": ["node_modules"]
 }

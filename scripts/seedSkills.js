@@ -1,6 +1,6 @@
 // scripts/seedSkills.js
-import { connectDB } from "../lib/lib.mongodb.js";
-import { Skill } from "../models/modelsSkill.js";
+import { connectDB } from "../src/lib/lib.mongodb.js";
+import { Skill } from "../src/models/modelsSkill.js";
 import 'dotenv/config';
 
 export const defaultSkills = [
