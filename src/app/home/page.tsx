@@ -361,7 +361,7 @@ const Portofolio = () => {
             />
           </HeaderCenter>
           <HeaderRight>
-            <div>💼 Lavoro in Betacom da 3 anni</div>
+            <div>💼 3+ anni di esperienza su progetti IT</div>
             <div>🎓 Laurea Triennale in Ingegneria Informatica</div>
             <div>🌍 Appassionato di tecnologia e innovazione</div>
           </HeaderRight>
@@ -412,7 +412,7 @@ const Portofolio = () => {
                 <CvButton
                   hovered={state.hoveredId === "cvButton"}
                   cursor={cursor}
-                  onClick={() => window.open("/Bartolomeo_B_CV.pdf", "_blank")}
+                  onClick={() => window.open("/Bartolomeo_BraccioCV.pdf", "_blank")}
                   onMouseEnter={() => {
                     dispatch({ type: "SET_HOVER", payload: "cvButton" });
                     dispatch({ type: "SET_CURSOR", payload: "pointer" });
