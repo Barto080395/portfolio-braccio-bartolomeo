@@ -1,5 +1,3 @@
-// app/layout.tsx (per esempio)
-
 import { GlobalProvider } from "./GlobalContext";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -2,7 +2,6 @@
 import React, { ReactNode } from "react";
 import { motion, Variants } from "framer-motion";
 
-// ===== VARIANTS =====
 const getVariants = (direction: "up" | "down" | "left" | "right"): Variants => {
   const distance = 40;
   let hidden = { opacity: 0, x: 0, y: 0 }; // x e y sempre presenti
@@ -37,16 +36,15 @@ const getVariants = (direction: "up" | "down" | "left" | "right"): Variants => {
   };
 };
 
-// ===== PROPS =====
+
 interface AnimatedProps {
   index?: number; 
   children: ReactNode;
   amount?: number; 
   once?: boolean; 
-  direction?: "up" | "down" | "left" | "right"; // nuova prop
+  direction?: "up" | "down" | "left" | "right"; 
 }
 
-// ===== COMPONENTE =====
 const Animated: React.FC<AnimatedProps> = ({
   index = 0,
   amount = 0.2,
