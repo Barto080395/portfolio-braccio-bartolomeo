@@ -90,7 +90,7 @@ const DigitalMission = () => {
         "Aggiorno le mie competenze ogni giorno per fornire soluzioni aggiornate e performanti nel mondo digitale.",
     },
     {
-      icon: "💡", // lampadina per creatività
+      icon: "💡",
       title: "Creatività e Innovazione",
       description:
         "Creo esperienze digitali uniche, con design accattivante e funzionalità pensate per valorizzare la tua presenza online.",
