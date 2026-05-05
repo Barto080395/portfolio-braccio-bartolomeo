@@ -154,7 +154,7 @@ const MiniWidget: React.FC<MiniWidgetProps> = ({ token }) => {
         >
           <ProfileImageWrapper>
             <Image
-              src={avatar || (isOwner ? "/bart.webp" : "/bart.jpg")}
+              src={avatar || (isOwner ? "/Bartolomeo.png" : "/bart.jpg")}
               alt="Avatar"
               width={40}
               height={40}
